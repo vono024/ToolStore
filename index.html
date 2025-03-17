@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин інструментів</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Магазин інструментів</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="admin.html">Адміністратор</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <section id="filters">
+            <select id="categoryFilter"></select>
+            <input type="text" id="searchInput" placeholder="Пошук інструменту">
+        </section>
+
+        <section id="products"></section>
+
+        <aside id="cart">
+            <h2>Корзина</h2>
+            <ul id="cartItems"></ul>
+            <div class="total">Загальна вартість: <span id="totalPrice">0</span> грн</div>
+            <button id="checkoutBtn">Оформити замовлення</button>
+        </aside>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Магазин інструментів</p>
+    </div>
+</footer>
+
+<script src="js/storage.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
